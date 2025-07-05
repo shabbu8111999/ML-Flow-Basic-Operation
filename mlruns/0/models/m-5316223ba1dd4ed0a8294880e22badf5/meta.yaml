@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/H%20P/Desktop/Machine%20Learning%20Projects/Ml%20flow%20test/mlruns/0/models/m-5316223ba1dd4ed0a8294880e22badf5/artifacts
+creation_timestamp: 1751722591329
+experiment_id: '0'
+last_updated_timestamp: 1751722600269
+model_id: m-5316223ba1dd4ed0a8294880e22badf5
+model_type: null
+name: model
+source_run_id: 7dc60977f93b4860a4e04c9bc569a9da
+status: 2
+status_message: null
