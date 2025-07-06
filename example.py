@@ -13,16 +13,16 @@ import mlflow
 import mlflow.sklearn
 
 import os
-import dagshub
+#import dagshub
 
 #Force MLflow to use DAGsHub as the tracking URI
-mlflow.set_tracking_uri("https://dagshub.com/shabbu8111999/ML-Flow-Basic-Operation.mlflow")
+#mlflow.set_tracking_uri("https://dagshub.com/shabbu8111999/ML-Flow-Basic-Operation.mlflow")
 
 #Re-confirm the URI is set
-print("Tracking URI:", mlflow.get_tracking_uri())
+#print("Tracking URI:", mlflow.get_tracking_uri())
 
 #Initialize DAGsHub
-dagshub.init(repo_owner="shabbu8111999", repo_name="ML-Flow-Basic-Operation", mlflow=True)
+#dagshub.init(repo_owner="shabbu8111999", repo_name="ML-Flow-Basic-Operation", mlflow=True)
 
 
 logging.basicConfig(level=logging.WARN)
@@ -82,9 +82,9 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        # For remote server only (Dagshub) - Old Version
-        # remote_server_uri = "https://dagshub.com/shabbu8111999/ML-Flow-Basic-Operation.mlflow"
-        # mlflow.set_tracking_uri(remote_server_uri)
+        # For AWS server only
+        remote_server_uri = "http://ec2-13-203-66-132.ap-south-1.compute.amazonaws.com:5000/"
+        mlflow.set_tracking_uri(remote_server_uri)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
