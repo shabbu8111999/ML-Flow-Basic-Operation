@@ -52,7 +52,7 @@ set ML FLOW_TRACKING_TOKENS=929d2e7e19d6a84f2682135c783b813c29e24089
 5. Create EC2 Machine (Ubuntu) & add Security groups 5000 port
 
 
-Run the following command on EC2 Machine
+## Run the following command on EC2 Machine AWS (Ubuntu)
 
 ```bash
 
